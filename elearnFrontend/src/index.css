@@ -1,0 +1,370 @@
+.home-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #18181b, #09090b);
+  color: #01080f;
+  padding: 60px 80px;
+}
+
+/* HERO */
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+.hero-content h1 span {
+  color: #22d3ee;
+}
+
+.hero-content p {
+  color: #cbd5f5;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #38bdf8, #22d3ee);
+  border: none;
+  color: #09090b;
+  font-weight: bold;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(56, 189, 248, 0.1);
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.stat-box h2 {
+  color: #38bdf8;
+  font-size: 2rem;
+}
+
+.stat-box span {
+  color: #cbd5f5;
+}
+
+/* RIGHT CARD */
+.hero-card {
+  background: linear-gradient(180deg, #09090b, #09090b);
+  border: 1px solid #1e293b;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.15);
+}
+
+.hero-card h3 {
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.hero-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.hero-card li {
+  margin-bottom: 8px;
+  color: #cbd5f5;
+}
+
+/* FEATURES */
+.features {
+  max-width: 1200px;
+  margin: 80px auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.feature-card {
+  background: linear-gradient(180deg, #09090b, #09090b);
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 25px;
+  transition: 0.25s ease;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.1);
+}
+
+.feature-card h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: hsl(223, 47%, 94%);
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.3);
+}
+body {
+  margin: 0;
+  background: #09090b;
+  color: #e5e7eb;
+}
+.contact-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #09090b, #09090b);
+  padding: 40px 20px;
+  color: #e5e7eb;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.contact-card {
+  background: #09090b;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.15);
+}
+
+.contact-card h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.muted {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.contact-info span {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  background: #09090b;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #e5e7eb;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.feedback-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.feedback-form button {
+  margin-top: 10px;
+  background: #38bdf8;
+  color: #09090b;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.feedback-form button:hover {
+  background: #0ea5e9;
+}
+
+.success-msg {
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid #22c55e;
+  color: #22c55e;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+.rating-box {
+  margin: 10px 0;
+}
+
+.rating-box p {
+  margin-bottom: 6px;
+  color: #94a3b8;
+}
+
+.stars {
+  display: flex;
+  gap: 6px;
+}
+
+.star {
+  font-size: 28px;
+  cursor: pointer;
+  color: #334155; /* gray */
+  transition: 0.2s;
+}
+
+.star:hover,
+.star.active {
+  color: #facc15; /* yellow */
+}
+.profile-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #09090b, #09090b);
+  color: #e5e7eb;
+}
+
+.profile-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  background: #09090b;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 20px 25px;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+.avatar-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #09090b;
+}
+
+.profile-header h1 {
+  margin: 0;
+  color: #38bdf8;
+}
+
+.profile-header .email {
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.profile-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.profile-card {
+  background: #09090b;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.12);
+}
+
+.profile-card h3 {
+  margin-bottom: 12px;
+  color: #38bdf8;
+}
+
+.profile-card p {
+  margin: 8px 0;
+  color: #e5e7eb;
+}
+
+.profile-card p span {
+  color: #94a3b8;
+}
+
+.profile-btn {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 10px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #09090b;
+}
+
+.profile-btn.outline {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.profile-btn:hover {
+  opacity: 0.9;
+}
+
+
+
