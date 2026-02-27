@@ -13,6 +13,9 @@ app.use(express.json());
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/user', require('./routes/user'));
 app.use('/api/feedback', require('./routes/feedback'));
+app.get("/", (req, res) => {
+  res.send("Backend is Live 🚀");
+});
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
