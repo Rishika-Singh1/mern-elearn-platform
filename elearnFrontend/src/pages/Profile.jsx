@@ -32,7 +32,7 @@ function Profile() {
     if (!window.confirm("Are you sure you want to drop this course?")) return;
 
     try {
-      const res = await fetch("http://localhost:5000/api/user/unenroll", {
+      const res = await fetch("https://mern-elearn-platform.onrender.com/api/user/unenroll", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -64,7 +64,7 @@ function Profile() {
 
   const handleUpdateProfile = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/user/profile", {
+      const res = await fetch("https://mern-elearn-platform.onrender.com/api/user/profile", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -99,7 +99,7 @@ function Profile() {
 
   const handleChangePassword = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/user/password", {
+      const res = await fetch("https://mern-elearn-platform.onrender.com/api/user/password", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

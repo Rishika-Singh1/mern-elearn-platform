@@ -33,7 +33,7 @@ function CourseDetails() {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/user/enroll", {
+      const res = await fetch("https://mern-elearn-platform.onrender.com/api/user/enroll", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -68,7 +68,7 @@ function CourseDetails() {
     if (!user) return;
 
     try {
-      const res = await fetch("http://localhost:5000/api/user/unenroll", {
+      const res = await fetch("https://mern-elearn-platform.onrender.com/api/user/unenroll", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -123,7 +123,7 @@ function CourseDetails() {
     setScore(correct);
 
     try {
-      const res = await fetch("http://localhost:5000/api/user/quiz", {
+      const res = await fetch("https://mern-elearn-platform.onrender.com/api/user/quiz", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

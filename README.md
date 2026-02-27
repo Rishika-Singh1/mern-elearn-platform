@@ -70,7 +70,7 @@ finalProject/
    ```bash
    npm start
    ```
-   The backend will run on `http://localhost:5000`.
+   The backend will run on `https://mern-elearn-platform.onrender.com`.
 
 ### Frontend Setup
 1. Open a new terminal and navigate to the frontend directory:
